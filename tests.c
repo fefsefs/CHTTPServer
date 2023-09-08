@@ -1,16 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int main(void){
-	int mtrx [5][5];
-	while (1){
-		break;	
+int main(void)
+{
+	char *hello;
+	FILE *flix = fopen("index.txt", "r");
+	if (flix == NULL)
+	{
+		printf("err openin file");
+		exit(EXIT_FAILURE);
 	}
-	for(int i = 0; i < 5; i++){
-		for(int j = 0; j < 5; j++){
-			printf("%d", mtrx[i][j]);
-		}
-		printf("\n");
-	}
+	read(hello, 170, flix);
+	printf("%s", hello);
+
 	return 0;
 }

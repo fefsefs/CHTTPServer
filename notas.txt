@@ -1,0 +1,55 @@
+Para hacer info HTTP hay 3 headers necesarios
+
+- HTTP/1.1 200 OK: esto menciona la version de HTTP que estamos
+usando, el codigo de estatus, y el mansaje de estatus
+
+- Content-Type: text/plain: esto determina que voy a
+estar mandando en este caso, texto sin mas 
+
+    application/java-archive
+    application/EDI-X12
+    application/javascript
+    application/xml
+    application/pdf
+    application/octet-stream
+    application/ogg
+    application/zip
+    application/xhtml+xml
+    application/x-shockwave-flash
+    application/json
+    application/x-www-form-urlencoded
+    application/ld+json
+    application/EDIFACT
+
+    audio/mpeg
+    audio/vnd.rn-realaudio
+    audio/x-wav
+    audio/x-ms-wma
+
+    image/gif
+    image/tiff
+    image/vnd.djvu
+    image/jpeg
+    image/svg+xml
+    image/png
+    image/x-icon
+    image/vnd.microsoft.icon
+
+    multipart/mixed
+    multipart/related
+    multipart/form-data
+    multipart/alternative
+
+    text/css
+    text/javascript (obsolete)
+    text/plain
+    text/html
+    text/xml
+    text/csv
+ 
+    etc
+
+    
+- Content-Length: 12: esto dice cuantos bytes es server
+esta mandando, el nvegador web solo leera esta cantidad
+

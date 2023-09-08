@@ -30,11 +30,11 @@ int main(int argc, char const *argv[])
         printf("cant open file to serve");
         exit(EXIT_FAILURE);
     }
-    char indxStringer[370] = {};
+    char indxStringer[163] = {};
     char caracter;
     int contador = 0;
     memset(indxStringer, "\0", sizeof(indxStringer));
-    while ((caracter = fgetc(httpDevo)) != EOF && contador < 370 - 1)
+    while ((caracter = fgetc(httpDevo)) != EOF && contador < 163 - 1)
     {
         indxStringer[contador] = caracter;
         contador++;
